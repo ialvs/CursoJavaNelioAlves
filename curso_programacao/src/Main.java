@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
@@ -22,7 +23,7 @@ public class Main {
 		
 		System.out.printf("%s tem %d anos e ganha %.2f reais%n", name,age,money); */
 		
-		String product1 = "Computer";
+		/*String product1 = "Computer";
 		String product2 = "Office desk";
 		
 		int age = 30;
@@ -31,7 +32,29 @@ public class Main {
 		
 		double price1 = 2100.0;
 		double price2 = 650.50;
-		double measure = 53.234567;
+		double measure = 53.234567;*/
+	    
+	    Scanner sc = new Scanner(System.in);
+	    
+	    System.out.println("Input the first product");
+	    String product1 = sc.next();
+	    System.out.println("Input the second product");
+	    String product2 = sc.next();
+        
+	    System.out.println("Input the age");
+        int age = sc.nextInt();
+        System.out.println("Input the code");
+        int code = sc.nextInt();
+        System.out.println("Input the gender");
+        char gender = sc.next().charAt(0);
+        
+        System.out.println("Input the first price");
+        double price1 = sc.nextDouble();
+        System.out.println("Input the second price");
+        double price2 = sc.nextDouble();
+        System.out.println("Input the measure");
+        double measure = sc.nextDouble();
+        
 		
 		System.out.println("Products:");
 		System.out.printf("%s, which price is $ %.2f%n", product1,price1);
@@ -47,6 +70,8 @@ public class Main {
 		System.out.printf("Rounded (three decimal places: %.3f %n",measure);
 		Locale.setDefault(Locale.US);
 		System.out.printf("US decimal point: %.3f",measure);
+		
+		sc.close();
 
 	}
 
