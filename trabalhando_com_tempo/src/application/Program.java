@@ -97,7 +97,7 @@ public class Program {
 		Instant nextWeekInstant = d06.plus(7,ChronoUnit.DAYS);
 		
 		System.out.println("pastWeekInstant - " + pastWeekInstant);
-		System.out.println("nextWeekInstant - " + nextWeekInstant);
+		System.out.println("nextWeekInstant - " + nextWeekInstant );
 		
 
 	}
